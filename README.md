@@ -39,7 +39,32 @@ During my third optimization model I used 3 hidden layers all with 50 neurons wi
 Were you able to achieve the target model performance? 
 I was unable to achieve the target model performance. The highest accuracy I received was .7270
 What steps did you take in your attempts to increase model performance? 
-The highest accuracy I received was during my first optimization. I added an additional hidden layerand I reduced the neurons from to 80 to 50
+The highest accuracy I received was during my first optimization. I added an additional hidden layers and I reduced the neurons from to 80 to 50. I also changed the activation from relu to tanh.
 
 # Summary: 
-Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
+Summarize the overall results of the deep learning model. 
+
+My first model shows:
+
+215/215 - 0s - 2ms/step - accuracy: 0.7270 - loss: 0.5840
+Loss: 0.5840498805046082, Accuracy: 0.7269679307937622
+
+This is the highest accuracy I could obtain. The accuracy is .7270 and the loss is .5840
+
+My second model shows:
+
+215/215 - 0s - 2ms/step - accuracy: 0.7265 - loss: 0.5900
+Loss: 0.5899550914764404, Accuracy: 0.7265306115150452
+
+The accuracy is .7265 and the loss is .5900 which is higher loss than my first attempt
+
+My third model shows:
+
+215/215 - 0s - 2ms/step - accuracy: 0.7242 - loss: 0.5673
+Loss: 0.5673274993896484, Accuracy: 0.7241982221603394
+
+The accuracy is .7242 and the loss is .5673 which is lower loss than my first attempt
+
+Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
+
+I recommend using GBMs because they have consistently shown strong performance in various machine learning competitions and real-world applications. The models require less preprocessing in comparison to neural networks which can reduce errors during preprocess. GBMs are designed to scale efficiently with large datasets and can leverage parallel and distributed computing, making them suitable for large-scale applications. By leveraging a Gradient Boosting Machine, you can potentially achieve better performance and interpretability with less computational overhead and fewer hyperparameter tuning efforts compared to a neural network model.
