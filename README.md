@@ -11,7 +11,7 @@ Using bulleted lists and images to support your answers, address the following q
 
 # Data Preprocessing
 
-What variable(s) are the target(s) for your model? 
+What variable(s) are the target(s) for your model? n/
 The target variable is the y variable. This holds the IS_SUCCESSFUL data. We want to know the data that was successful in the alphabet soup dataset
 What variable(s) are the features for your model? 
 The features for the model is the x variable. This holds the APPLICATION_TYPE', 'AFFILIATION', 'CLASSIFICATION',
